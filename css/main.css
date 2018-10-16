@@ -1,0 +1,47 @@
+#bear {
+  transform: translateY(0);
+  transform-origin: center center;
+  transition: all 200ms linear;
+}
+
+#bear:hover #left-ear {
+  transform: translateY(30px);
+}
+
+#bear:hover #right-ear {
+  transform: translateY(30px);
+}
+
+#left-eye {
+  transform: translateX(0);
+  animation: moves 15s ease infinite;
+}
+
+@keyframes moves {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(25px);
+  }
+
+}
+
+#right-eye {
+  transform: translateX(0);
+  animation: rightmoves 15s ease infinite;
+}
+
+@keyframes rightmoves {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(25px);
+  }
+
+}
